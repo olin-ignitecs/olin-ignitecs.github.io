@@ -207,3 +207,26 @@ the concepts already introduced is
     if (delay >= 1000) {
         delay = 500;
     }
+
+`else` clauses are what to do if the condition in the `()` is *not* met. An example of this is:
+
+    int num = X; //Fill this with a number
+    int isEven;
+
+    if (num % 2 == 0) { // the % checks the remainder if divided by by the next number.
+        isEven = 1;
+    } else {
+        isEven = 0;
+    }
+
+and lastly, `else if` is checking another condition is met, but only if the initial condition is not met. For example:
+
+    int num = X; // Fill this with a number
+
+    if (num == 0) {
+        Serial.println("Zero");
+    } else if (num == 1) {
+        Serial.println("One");
+    } else {
+        Serial.println("Too big!");
+    }
