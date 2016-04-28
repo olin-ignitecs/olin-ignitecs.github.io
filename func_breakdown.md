@@ -1,11 +1,8 @@
 # Arduino basic functions
-<div id=1></div>
 ## Preface
-<div id=2></div>
 
 
 ### Background knowlege
-<div id=3></div>
 
 An Arduino is a device that you can program with your computer to interface with the 
 real world. It can run motors, blink lights, communicate with sensors, and talk to 
@@ -21,7 +18,6 @@ want. It's also *very* fast, and takes very few resources to run, which is why c
 platforms like the Arduino exist, as they can use less powerful hardware to run.
 
 ### Additional resources
-<div id=4></div>
 
 For more complex and comprehensive resources, there are some excellent 
 [books](https://hassanolity.files.wordpress.com/2013/11/the_c_programming_language_2.pdf) 
@@ -32,10 +28,8 @@ had your issue before (chances are they have) or to ask for help py posting your
 thread.
 
 ## What you need to know to write `Arduino C`
-<div id=5></div>
 
 ### Comments
-<div id=6></div>
 
 First off, we have the code comment. It is *not* actual code, it's just a marker 
 that tells the computer to ignore some text. This is useful to write some plain old 
@@ -61,7 +55,6 @@ machine by just power-cycling it with no understanding of what is going wrong.â€
     // This too, is a comment
 
 ### Variables
-<div id=7></div>
 
 Variables are ways of storing data in a symbol or label. You can think of it like a 
 box that holds something, for example an integer. Variables have to be declared 
@@ -94,10 +87,8 @@ it will interpret it as the variables value. So if we tell the computer to print
 (teach them how to print maybe?) the value of `cows`, it will tell us 6.
 
 ### Arduino specific functions
-<div id=8></div>
 
 #### `pinMode`
-<div id=9></div>
 
 Now that we know a little bit about variables and comments, we can learn about 
 functions that the Arduino uses. 
@@ -126,7 +117,6 @@ It matters if the pin is an output or an input for us to be able to use two othe
 functions, `digitalWrite` and `digitalRead`, respectively.
 
 #### `digitalWrite` and `digitalRead`
-<div id=10></div>
 
 First off, a warning. **`digitalWrite` can only be used if the `pinMode` for that 
 pin has been set to `OUTPUT`, and `digitalRead` can only be used if it has been set 
@@ -174,7 +164,6 @@ source. If we pushed the button and ran this code, the LED would stay on, but if
 didn't push the button, it wouldn't turn on.
 
 ##### Optional
-<div id=11></div>
 
 Interestingly enough, this code gives us some insight into what `HIGH` and `LOW` 
 actually are. since we declared `val` as only being able to hold integers, and we 
@@ -184,7 +173,6 @@ we can infer that `HIGH` and `LOW` are actually integers!
 Sure enough, `HIGH` is 1 and `LOW` is 0. Binary numbers!
 
 #### `delay`
-<div id=12></div>
 
 `delay` makes it possible to make the program run *slower* by making the program 
 pause. We need it to run slower because `C` can run much faster than we can 
@@ -204,10 +192,8 @@ stays on for a second (`delay` takes a number of millieconds to do nothing) and 
 turns off.
 
 ### Higher order functions and constructs
-<div id=13></div>
 
 #### `if`, `else`, and `else if` statements
-<div id=14></div>
 
 `if` statements are a crucial part of computer logic. It's what allows the computer 
 to decide what course of action to take. A quick example of this in the context of 
