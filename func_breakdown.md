@@ -230,3 +230,30 @@ and lastly, `else if` is checking another condition is met, but only if the init
     } else {
         Serial.println("Too big!");
     }
+
+#### `for` and `while` loops
+Loops are constructs to do the same kind of instruction over and over.
+`while` loops check if a condidtion is true, and execute the body of the loop if the condition is true. This can be used to construct infinite loops. An example of this is:
+
+    int num = 0;
+    while (1) {
+        Serial.println(num);
+        num++;
+    }
+
+Which prints all the numbers until something drastic happens like there's an integer overflow.
+Checking or tru conditions works the same way.
+
+    int num = 0;
+    while (num <= 10) {
+        Serial.println(num);
+        num++;
+    }
+
+The loop and add and check conditional can be done with a `for` loop. It is a special case of the `while` loop.
+
+    for (num = 0; num <= 10; num++) {
+        Serial.println(num);
+    }
+
+![A for loop](http://www.arduino.cc/en/uploads/Reference/ForLoopIllustrated.png)
